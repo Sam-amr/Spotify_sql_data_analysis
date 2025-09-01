@@ -1,5 +1,8 @@
 # SPOTIFY DATA ANALYSIS USING SQL
 
+### Overview
+The Spotify data analysis project focuses on exploring music streaming data to gain insights into songs, artists, albums, and listener engagement. Using SQL, the project involves cleaning the dataset, analyzing track popularity, album types, and streaming platforms, and performing calculations on metrics such as energy, danceability, views, and likes. Key analyses include identifying top-streamed tracks, most active artists, platform-specific performance, and trends in musical attributes. The project demonstrates how SQL can turn raw streaming data into actionable insights for music recommendation, marketing strategies, and content optimization.
+
 ### Objectives
 1. Identify the most viewed, liked, and streamed tracks.
 2. Determine top-performing artists and albums using aggregated metrics.
@@ -248,6 +251,36 @@ SELECT
 FROM spotify
 ORDER BY views;
 ```
+
+## Key Findings 
+1. The dataset comprises a diverse set of artists, tracks, and albums, enabling analysis of content distribution and platform catalog structure.
+
+2. Data preprocessing involved removing tracks with 0 duration, ensuring accuracy in downstream analysis.
+
+3. Album and album type analysis (e.g., single, EP, full album) provides insights into content categorization and identifies the total number of unique albums and contributing artists.
+
+4. Tracks exceeding 1 billion streams were identified, highlighting high-impact, globally popular content.
+
+5. Artist-level aggregation reveals prolific contributors and their total track counts, demonstrating content creation trends.
+
+6. Average danceability per album was computed to assess rhythmic and engagement characteristics of music collections.
+
+7. High-energy tracks were highlighted to understand songs with intense musical dynamics.
+
+8. Analysis of official videos including total views and likes offers insight into audience engagement on visual platforms.
+
+9. Cross-platform comparison of Spotify vs. YouTube streams identifies platform-specific popularity and performance trends.
+
+10. Top-performing tracks per artist were derived using window functions, emphasizing key hits and audience preferences.
+
+11. Tracks with above-average liveness scores indicate higher audience interaction or live performance characteristics.
+
+12. Energy variation per album and energy-to-liveness ratios provide detailed metrics on musical intensity and track dynamics.
+
+13. Cumulative likes analysis by views helps identify trending tracks and understand the progressive growth of content popularity.
+    
+## Conclusion
+In conclusion, this project demonstrates the ability to extract, clean, and analyze large-scale music streaming data using SQL. By exploring tracks, albums, and artists, the analysis provided insights into content popularity, engagement metrics, and platform-specific performance. Key outcomes include identifying top-streamed songs, high-energy tracks, audience engagement patterns, and trends across album types and artists. Overall, the project showcases technical proficiency in SQL, data aggregation, window functions, and analytical reasoning, highlighting the ability to turn raw data into actionable insights for music recommendation, marketing strategy, and content optimization.
 
 
 
